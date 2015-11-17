@@ -20,17 +20,17 @@
 					var processData = function(data){
 						console.log(data);
 						for(var i=0; i<data.length; i++) {
-							// $("body").append(data[i].foods + " ");
-							// $("<h2>").addClass("fancyBorder").html(data[i].foods).appendTo("body");
+						//	 $("body").append(data[i].names + " ");
+						//	$("<h2>").addClass("fancyBorder").html(data[i].names).appendTo("body");
 						//	if(data[i].price === "$") {
 							//	var price = "cheap";
 						//	} else if(data[i].price === "$$") {
 						//		var price = "average";
 						//	} else if(data[i].price === "$$$") {
 						//		var price = "expensive";
-							}
-							$("<h2>").addClass("fancyBorder").addClass(Names).html(data[i].Names).appendTo("body");
-					$("body").append("<h2 class='fancyBorder'>"+data[i].Names+"</h2>");
+			//	}
+					$("<h2>").addClass("fancyBorder").addClass("names").html(data[i].names).appendTo("body");
+					//$("body").append("<h2 class='fancyBorder'>"+data[i].names+"</h2>");
 						}
 					};
 					//function that runs when the page is ready
@@ -50,6 +50,12 @@
 			.expensive {
 				background-color:red;
 			}
+			.names {
+				background-color: grey;
+				font-size: 2em;
+				text-align: center;
+			}
+
 		</style>
 
 	</head>
